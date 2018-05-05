@@ -14,7 +14,7 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        //
+        return Restaurant::all();
     }
 
     /**
@@ -86,4 +86,9 @@ class RestaurantController extends Controller
     public function getRestaurantMenus(Request $request, $restaurant_id){
         return Restaurant::find($restaurant_id)->menus;
     }
+
+    public function getRestaurantTables(Request $request, $restaurant_id){
+        return Restaurant::find($restaurant_id)->tables;
+    }
+
 }

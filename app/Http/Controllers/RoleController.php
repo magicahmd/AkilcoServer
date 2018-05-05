@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Table;
+use App\Role;
 use Illuminate\Http\Request;
 
-class TableController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class TableController extends Controller
      */
     public function index()
     {
-        return Table::all();
+        //
     }
 
     /**
@@ -41,21 +41,21 @@ class TableController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Table  $table
+     * @param  \App\Role  $role
      * @return \Illuminate\Http\Response
      */
-    public function show(Table $table)
+    public function show(Role $role)
     {
-        return $table;
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Table  $table
+     * @param  \App\Role  $role
      * @return \Illuminate\Http\Response
      */
-    public function edit(Table $table)
+    public function edit(Role $role)
     {
         //
     }
@@ -64,10 +64,10 @@ class TableController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Table  $table
+     * @param  \App\Role  $role
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Table $table)
+    public function update(Request $request, Role $role)
     {
         //
     }
@@ -75,10 +75,10 @@ class TableController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Table  $table
+     * @param  \App\Role  $role
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Table $table)
+    public function destroy(Role $role)
     {
         //
     }

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class MenusTableSeeder extends Seeder
+class RoleUserTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,31 +12,36 @@ class MenusTableSeeder extends Seeder
     public function run()
     {
 
-        DB::table('menus')->insert([
+        DB::table('role_user')->insert([
                 [
-                    'name' => 'Pizza',
+                    'user_id' => '1',
+                    'role_id' => '2',
                     'restaurant_id' => '1',
                 ],
                 [
-                    'name' => 'Starter & Slides',
-                    'restaurant_id' => '1',
+                    'user_id' => '2',
+                    'role_id' => '2',
+                    'restaurant_id' => '2',
                 ],
                 [
-                    'name' => 'Pasta & Mains',
+                    'user_id' => '3',
+                    'role_id' => '3',
                     'restaurant_id' => '1',
                 ],
+
                 [
-                    'name' => 'Desserts',
+                    'user_id' => '4',
+                    'role_id' => '3',
                     'restaurant_id' => '1',
                 ],
+
                 [
-                    'name' => 'Drinks',
+                    'user_id' => '5',
+                    'role_id' => '3',
                     'restaurant_id' => '1',
                 ],
-                [
-                    'name' => 'KidsMenu',
-                    'restaurant_id' => '1',
-                ],
+
+
             ]
         );
 

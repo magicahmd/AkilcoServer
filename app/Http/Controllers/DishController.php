@@ -82,4 +82,18 @@ class DishController extends Controller
     {
         //
     }
+
+    public function getDishSizes($id){
+        $dish = Dish::find($id);
+
+        $result = [];
+
+        foreach ($dish->sizes as $dish){
+
+            array_push($result,$dish);
+
+        }
+
+        return $result;
+    }
 }

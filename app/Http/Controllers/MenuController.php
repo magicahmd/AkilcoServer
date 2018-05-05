@@ -80,6 +80,13 @@ class MenuController extends Controller
      */
     public function destroy(Menu $menu)
     {
+        $menu->dishes()->delete();
         $menu->delete();
     }
+
+    public function getMenuDishes(Request $request, $menu_id){
+        return Menu::find($menu_id)->dishes;
+    }
+
+
 }
